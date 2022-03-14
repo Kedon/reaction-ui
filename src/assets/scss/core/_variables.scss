@@ -8,17 +8,12 @@
 //  Author URL: http://www.themeforest.net/user/pixinvent
 //  ================================================================================================
 
-//COLOR SYSTEM
-
-$light-blue: #e4f0ff;
-$blue: #1e86f9;
-
-$light-gray: #f3f2f2;
-
-
-
-$button-radius: 8px;
 // Color system
+
+
+
+
+
 
 $white: #fff;
 $body-bg: #f8f8f8;
@@ -34,6 +29,59 @@ $gray-800: #77828D; // $gray-dark
 $gray-900: #717B85;
 $black: #22292f;
 
+
+//SYSTEM COLORS
+//Sky blue
+$sky-blue-pastel: #D9EEF5 !default;
+$sky-blue-light: #35B2D9 !default;
+$sky-blue: #009ACA !default;
+$sky-blue-dark: #0084AD !default;
+//Water green
+$water-green-pastel: #C0E6DE;
+$water-green-light: #32BA9C;
+$water-green: #00A882;
+$water-green-dark: #008B6C;
+//Gray
+$gray-pastel: #F8F8F8 !default;
+$gray-light: #848484 !default;
+$gray: #626262 !default;
+$gray-dark: #383838 !default;
+
+
+//STATES SYSTEM COLORS
+//Success
+$success-pastel: #E9F8F0;
+$success-light: #2CDB7B;
+$success: #28C76F;
+$success-dark: #23AD61;
+//System
+$system-pastel: #E4EAF5;
+$system-light: #193666;
+$system: #1D3051;
+$system-dark: #0E1D38;
+//Info 
+$info-pastel: #EBF3FF;
+$info-light: #7CAEFF;
+$info: #438BFF;
+$info-dark: #2075FD;
+//Warning
+$warning-pastel: #FCF2E8;
+$warning-light: #FCB673;
+$warning: #FF9F43;
+$warning-dark: #FC8F27;
+//Danger
+$danger-pastel: #F5E9EA;
+$danger-light: #D05363;
+$danger: #C4162D;
+$danger-dark: #AC0219;
+//Spanish gray
+$spanish-gray-pastel: #F0F0F0;
+$spanish-gray-light: #BFB2B2;
+$spanish-gray: #A59999;
+$spanish-gray-dark: #8B7C7C;
+
+
+$blue: #00cfe8; //$info
 $link: #3180d4;
 $navy-blue: #2B4676; //$primary
 $red: #C4162D; //$danger
@@ -42,13 +90,34 @@ $green: #28c76f; //$success
 
 $facebook: #3b5998;
 $whatsapp: #059F1E;
+$gupshup: rgb(227,163,38);
 
-$primary: $blue;
-$secondary: $red;
+$primary: $sky-blue;
+$primary-pastel: $sky-blue-pastel;
+$primary-dark: $sky-blue-dark;
+$primary-light: $sky-blue-light;
+
+$secondary: $water-green;
+$secondary-pastel: $water-green-pastel;
+$secondary-dark: $water-green-dark;
+$secondary-light: $water-green-light;
+
 $danger: $red;
 $info: $blue;
 $warning: $orange;
-$success: $green;
+
+$transition-fast: all 140ms ease-in-out;
+$transition-medium: all 240ms ease-in-out;
+$transition-slow: all 440ms ease-in-out;
+
+$shadow-basic: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08) !important;
+
+$shadow-box: rgba(0, 0, 0, .1) 0px 0px 0px 1px, rgba(0, 0, 0, .1) 0px 4px 11px  !important;
+
+$font-size-base: 1rem;
+$font-size-xs: 0.75rem;
+$font-size-xl: ($font-size-base + 0.5);
+
 
 // Spacing
 //
@@ -120,7 +189,8 @@ $grid-gutter-width: 28px;
 $line-height-lg: 1.25;
 $line-height-sm: 1;
 $border-width: 1px;
-$border-color: $gray-200;
+$border-color: rgba($gray-100,.65);
+$border-color-light: rgba($gray-100,.4);
 $border-radius: 0.5rem;
 $border-radius-lg: 0.6rem;
 $border-radius-sm: 0.25rem;
@@ -135,9 +205,8 @@ $font-family-sans-serif: "Montserrat", Helvetica, Arial, serif;
 $font-family-monospace: "Montserrat", Helvetica, Arial, serif;
 
 // stylelint-enable value-keyword-case
-$font-size-base: 16px;
+$font-size-base: 1rem;
 $font-size-sm: ceil($font-size-base * 0.85);
-$font-size-xs: ceil($font-size-base * 0.75);
 $font-size-lg: ceil($font-size-base * 1.25);
 
 $line-height-base: 1.45;

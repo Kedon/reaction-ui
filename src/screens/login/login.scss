@@ -1,0 +1,8 @@
+@import "../../assets/scss/core/variables";
+
+.login-logo {
+    display: none;
+    svg path {
+        fill: $gray
+    }
+} 

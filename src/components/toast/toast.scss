@@ -1,0 +1,98 @@
+@import "../../assets/scss/core/variables";
+
+.toasts-wrapper {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999999;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &.show-custom-toasts {
+        //left: 20px;
+    }
+    .custom-toast {
+        background-color: #fff;
+        border-radius: 3px;
+        width: fit-content;
+        max-width: 400px;
+        box-shadow: $shadow-basic;
+        margin-top: 16px;
+        display: flex;
+        position: relative;
+        align-self: center;
+        animation: 140ms fadeIn;
+        animation-fill-mode: forwards;
+        transition: $transition-fast;
+        margin-bottom: -40px;
+        overflow: hidden;
+        padding-left: 50px;
+        max-width: 0 10px;
+        user-select: none;
+        .custom-toast__text {
+            padding: 16px 24px;
+            line-height: 1.4;
+            font-size: 14px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            .custom-toast__icon {
+                margin-right: 15px;
+                position: absolute;
+                left: -15px;
+                svg {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+        .custom-toast__close-btn {
+            border: none;
+            background-color: transparent;
+            font-size: 16px;
+            margin-top: 8px;
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        &:before {
+            content: '';
+            width: 5px;
+            height: calc( 100% - 6px);
+            position: absolute;
+            border-radius: 3px;
+            top: 3px;
+            right: 3px;
+        }
+
+        &.warning {
+            .custom-toast__icon {
+                color: $warning-dark;
+            }
+            color: $gray-light !important;
+            &:before {
+                background-color: $warning-dark;
+            }
+        }
+
+        &.danger {
+            .custom-toast__icon {
+                color: $danger-dark;
+            }
+            color: $gray !important;
+            &:before {
+                background-color: $danger-dark;
+            }
+        }
+
+        &.success {
+            .custom-toast__icon {
+                color: $success-dark;
+            }
+            color: $gray !important;
+            &:before {
+                background-color: $success-dark;
+            }
+        }
+    }
+  }

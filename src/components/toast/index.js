@@ -1,12 +1,4 @@
-import React from 'react';
-import './style.scss'
+import withToastProvider from './withToastProvider';
+import useToast from './useToast';
 
-const Toast = ({ label, error, ...rest }) => {
-    return (
-        <div className="component-toast">
-
-        </div>
-    )
-}
-
-export default Toast
+export { withToastProvider, useToast };

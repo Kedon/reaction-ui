@@ -1,0 +1,30 @@
+<svg id="Artwork" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="236" height="236" viewBox="0 0 236 236">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="clip" cx="118" cy="118" r="118" fill="#f5f9fb" stroke="rgba(27,53,84,0.02)" stroke-miterlimit="10" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="clip-2" data-name="clip" fill="#f5f9fb" stroke="rgba(27,53,84,0.02)" stroke-miterlimit="10" stroke-width="1">
+    <circle cx="118" cy="118" r="118" stroke="none"/>
+    <circle cx="118" cy="118" r="117.5" fill="none"/>
+  </g>
+  <g id="Artwork-2" data-name="Artwork" clip-path="url(#clip-path)">
+    <path id="base" d="M30,0h84a30,30,0,0,1,30,30V190a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V30A30,30,0,0,1,30,0Z" transform="translate(46 48)" fill="#fff" stroke="rgba(75,101,142,0.35)" stroke-miterlimit="10" stroke-width="2"/>
+    <g id="screen" transform="translate(53 86)" fill="#fff" stroke="rgba(27,53,84,0.1)" stroke-miterlimit="10" stroke-width="1">
+      <rect width="129" height="152" stroke="none"/>
+      <rect x="0.5" y="0.5" width="128" height="151" fill="none"/>
+    </g>
+    <g id="_1" data-name="1" transform="translate(63 96)">
+      <rect id="Rectangle" width="109" height="40" rx="3" fill="#91f6ba"/>
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="78" height="4" rx="2" transform="translate(9 10)" fill="#fff"/>
+      <rect id="Rectangle_2_Copy" data-name="Rectangle 2 Copy" width="57" height="4" rx="2" transform="translate(9 18)" fill="#fff"/>
+      <rect id="Rectangle_2_Copy_2" data-name="Rectangle 2 Copy 2" width="17" height="4" rx="2" transform="translate(9 28)" fill="#fff" opacity="0.55"/>
+    </g>
+    <g id="_2" data-name="2" transform="translate(63 146)">
+      <rect id="Rectangle-2" data-name="Rectangle" width="109" height="40" rx="3" fill="#7ca2e2"/>
+      <rect id="Rectangle_2-2" data-name="Rectangle 2" width="78" height="4" rx="2" transform="translate(9 10)" fill="#fff"/>
+      <rect id="Rectangle_2_Copy-2" data-name="Rectangle 2 Copy" width="57" height="4" rx="2" transform="translate(9 18)" fill="#fff"/>
+      <rect id="Rectangle_2_Copy_2-2" data-name="Rectangle 2 Copy 2" width="17" height="4" rx="2" transform="translate(9 28)" fill="#fff" opacity="0.55"/>
+    </g>
+  </g>
+</svg>

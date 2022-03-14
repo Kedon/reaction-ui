@@ -1,6 +1,7 @@
 import logo from './logo.svg';
-import AppRoute from './components/routes'
+import AppRoute from './screens/Router'
 import './assets/scss/app.scss';
+import { withToastProvider } from './components/toast'
 
 function App() {
   return (
@@ -8,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default withToastProvider(App);

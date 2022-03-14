@@ -1,0 +1,126 @@
+
+@import "./variables";
+
+.ui-color{
+    &.primary {
+        color: $primary;
+        &.dark {
+            color: $primary-dark;
+        }
+        &.light {
+            color: $primary-light;
+        }
+        &.pastel {
+            color: $primary-pastel;
+        }
+    }
+    &.secondary {
+        color: $secondary;
+        &.dark {
+            color: $secondary-dark;
+        }
+        &.light {
+            color: $secondary-light;
+        }
+        &.pastel {
+            color: $secondary-pastel;
+        }
+    } 
+    &.secondary {
+        color: $secondary;
+        &.dark {
+            color: $secondary-dark;
+        }
+        &.light {
+            color: $secondary-light;
+        }
+        &.pastel {
+            color: $secondary-pastel;
+        }
+    } 
+
+    &.gray {
+        color: $gray;
+        &.dark {
+            color: $gray-dark;
+        }
+        &.light {
+            color: $gray-light;
+        }
+        &.pastel {
+            color: $gray-pastel;
+        }
+    }
+    &.success {
+        color: $success;
+        &.dark {
+            color: $success-dark;
+        }
+        &.light {
+            color: $success-light;
+        }
+        &.pastel {
+            color: $success-pastel;
+        }
+    }
+    &.system {
+        color: $system;
+        &.dark {
+            color: $system-dark;
+        }
+        &.light {
+            color: $system-light;
+        }
+        &.pastel {
+            color: $system-pastel;
+        }
+    }
+    &.info {
+        color: $info;
+        &.dark {
+            color: $info-dark;
+        }
+        &.light {
+            color: $info-light;
+        }
+        &.pastel {
+            color: $info-pastel;
+        }
+    }
+    &.warning {
+        color: $warning;
+        &.dark {
+            color: $warning-dark;
+        }
+        &.light {
+            color: $warning-light;
+        }
+        &.pastel {
+            color: $warning-pastel;
+        }
+    }
+    &.danger {
+        color: $danger;
+        &.dark {
+            color: $danger-dark;
+        }
+        &.light {
+            color: $danger-light;
+        }
+        &.pastel {
+            color: $danger-pastel;
+        }
+    }
+    &.spanish-gray {
+        color: $spanish-gray;
+        &.dark {
+            color: $spanish-gray-dark;
+        }
+        &.light {
+            color: $spanish-gray-light;
+        }
+        &.pastel {
+            color: $spanish-gray-pastel;
+        }
+    }
+}

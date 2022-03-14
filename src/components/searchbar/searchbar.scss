@@ -1,0 +1,42 @@
+@import "../../assets/scss/core/variables";
+
+.search-bar-form{
+    position: relative;
+    //max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    .form-group{
+        .search-actions{
+            position: absolute;
+            height: calc(100% - .5rem);
+            margin: .25rem .35rem;
+            top: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .25s ease-in-out;
+            &.show{
+                visibility: visible;
+                opacity: 1;
+            }
+            button {
+                border: none;
+                height: 100%;
+                background: $primary;
+                color: $white;
+                border-radius: 1rem;
+                font-size: $font-size-sm *.8;
+                padding: 0 1rem;
+                font-weight: 500;
+                letter-spacing: .08rem;
+            }
+            .clean-search{
+                padding: .3rem;
+                cursor: default;
+            }  
+        }
+    }
+  }

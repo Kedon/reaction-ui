@@ -1,0 +1,224 @@
+@import "../../assets/scss/core/variables";
+
+button.buttom-ui {
+    background: transparent;
+    border: none;
+    padding: 9px 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+    position: relative;
+    font-size: 13px;
+    &.md {
+        padding: 18px;
+    }
+    .spinner-border-sm {
+        position: absolute;
+    }
+    span.processing {
+        opacity: 0;
+    }
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 3px;
+        left: 0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all 0.5s;
+        box-shadow: 0 0 10px 40px rgb(212, 212, 212);
+    }
+    &:active:after {
+        box-shadow: 0 0 0 0 rgb(205, 205, 205);
+        position: absolute;
+        border-radius: 5px;
+        left: 0;
+        top:0;
+        opacity: 1;
+        transition: 0s;
+      }
+      &:active {
+        top: 1px;
+      }
+    .button-icon {
+        margin-right: 8px;
+    }
+    &:hover {
+        background: #EFEFEF;
+    }
+    &.add {
+        color: $success;
+        &:active {
+            background: #E9F8F0;
+        }
+    }
+    &.save {
+        color: $system;
+        &:active {
+            background: $system-pastel;
+        }
+    }
+    &.confirm {
+        color: $warning;
+        &:active {
+            background: $warning-pastel;
+        }
+    }
+    &.undo {
+        color: $info;
+        &:active {
+            background: $info-pastel;
+        }
+    }
+    &.delete {
+        color: $danger;
+        &:active {
+            background: $danger-pastel;
+        }
+    }
+    &.cancel {
+        color: $spanish-gray;
+        &:active {
+            background: $spanish-gray-pastel;
+        }
+    }
+    &.edit {
+        color: $primary;
+        &:active {
+            background: $primary-pastel;
+        }
+    }
+    &.exclude {
+        color: $danger;
+        &:active {
+            background: $danger-pastel;
+        }
+    }
+    &.primary {
+        color: $sky-blue;
+        &:active {
+            background: $sky-blue-pastel;
+        }
+    }
+    &.secondary {
+        color: $water-green;
+        &:active {
+            background: $water-green-pastel;
+        }
+    }
+    &.default {
+        color: $gray;
+        &:active {
+            background: $gray-pastel;
+        }
+    }
+    &.success {
+        color: $success;
+        &:active {
+            background: $success-pastel;
+        }
+    }
+    &.system {
+        color: $system;
+        &:active {
+            background: $system-pastel;
+        }
+    }
+    &.info {
+        color: $info;
+        &:active {
+            background: $info-pastel;
+        }
+    }
+    &.warning {
+        color: $warning;
+        &:active {
+            background: $warning-pastel;
+        }
+    }
+    &.danger {
+        color: $danger;
+        &:active {
+            background: $danger-pastel;
+        }
+    }
+    &.spanish-gray {
+        color: $spanish-gray;
+        &:active {
+            background: $spanish-gray-pastel;
+        }
+    }
+    &.add.dark {
+        color: #FFF !important;
+        background: $success;
+    }
+    &.save.dark {
+        color: #FFF !important;
+        background: $system;
+    }
+    &.confirm.dark {
+        color: #FFF !important;
+        background: $warning;
+    }
+    &.undo.dark {
+        color: #FFF !important;
+        background: $info;
+    }
+    &.delete.dark {
+        color: #FFF !important;
+        background: $danger;
+    }
+    &.cancel.dark {
+        color: #FFF !important;
+        background: $spanish-gray;
+    }
+    &.edit.dark {
+        color: #FFF !important;
+        background: $primary;
+    }
+    &.exclude.dark {
+        color: #FFF !important;
+        background: $danger;
+    }
+    &.primary.dark {
+        color: #FFF !important;
+        background: $primary;
+    }
+    &.secondary.dark {
+        color: #FFF !important;
+        background: $secondary;
+    }
+    &.default.dark {
+        color: #FFF !important;
+        background: $gray;
+    }
+    &.success.dark {
+        color: #FFF !important;
+        background: $success;
+    }
+    &.system.dark {
+        color: #FFF !important;
+        background: $system;
+    }
+    &.info.dark {
+        color: #FFF !important;
+        background: $info;
+    }
+    &.warning.dark {
+        color: #FFF !important;
+        background: $warning;
+    }
+    &.danger.dark {
+        color: #FFF !important;
+        background: $danger;
+    }
+    &.spanish-gray.dark {
+        color: #FFF !important;
+        background: $spanish-gray;
+    }
+}

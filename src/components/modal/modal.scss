@@ -1,0 +1,181 @@
+@import "../../assets/scss/core/variables";
+
+.modal-window-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999999;
+    display: flex;
+    justify-content: center;
+    &.top {
+        align-items: flex-start;
+    }
+    &.center {
+        align-items: center;
+    }
+    &.bottom {
+        align-items: flex-end;
+    }
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s ease;
+    &.show {
+        visibility: visible;
+        opacity: 1;
+    }
+    .modal-window-overlay {
+        background-color: rgba(0,0,0,.5);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    
+        &.show {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    .modal-window {
+        background-color: $white;
+        border-radius: 3px;
+        width: 450px;
+        max-width: 100%;
+        box-shadow: $shadow-box;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.25s ease;
+        position: relative;
+        .modal-window-header {
+            border-bottom: solid 1px rgba($gray-100, .5);
+            padding: 10px;
+            h2 {
+                font-size: 17px;
+                margin: 0;
+                font-weight: 400;
+                color: $primary;
+                text-align: center;
+            }
+        }
+        .modal-window-body {
+            padding: 10px;
+            max-height: calc(100vh - 140px);
+            overflow-x: auto;
+        }
+        .modal-window-footer {
+            padding: 10px;  
+            border-top: solid 1px rgba($gray-100, .5);
+            background-color: rgba($gray-100, .1);
+        }
+        .illustration {
+            margin: 0 auto 25px auto;
+            text-align: center;
+        }
+        &.top {
+            margin-top: -25px;
+            &.show {
+                visibility: visible;
+                opacity: 1;
+                margin-top: 25px;
+            }
+        }
+        &.center {
+            align-items: center;
+            margin: 15px 0;
+            transform: scale(.7);
+            &.show {
+                visibility: visible;
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        &.bottom {
+            align-items: flex-end;
+            margin-bottom: -25px;
+            &.show {
+                visibility: visible;
+                opacity: 1;
+                margin-bottom: 25px;
+            }
+        }
+        &.window-md {
+            width: 500px;
+        }
+        &.window-lg {
+            width: 750px;
+        }
+        &.window-xl {
+            width: 1400px;
+        }
+        h4{
+            color: $gray-dark;
+            text-align: center;
+            font-size: 16px;
+        }
+        p {
+            color: $gray;
+            font-size: 15px;
+            text-align: center;
+        }
+        .ct-close {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: $danger;
+            background: $white;
+            width: 22px;
+            height: 22px;
+            border-radius: 11px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .25s ease-in-out;
+            svg {
+                width: 12px
+            }
+            &:hover {
+                color: $white;
+                background: $danger;
+            }
+
+        }
+        &.warning {
+            .body-card-footer {
+                background-color: $warning-pastel;
+                border-color: rgba($warning-dark, .2);
+            }
+            .body-card-container {
+                background-color: rgba($warning-pastel, .2);
+                border-color: rgba($warning-dark, .2);
+                //border-radius: 3px;
+            }
+            .body-card-content, .body-card-content p {
+               color: $spanish-gray-dark;
+            }
+            h1 {
+                color: $warning-dark;
+            }
+        }   
+
+        &.danger {
+            .body-card-footer {
+                background-color: $danger-pastel;
+                border-color: rgba($danger-dark, .2);
+            }
+            .body-card-container {
+                background-color: rgba($danger-pastel, .6);
+                border-color: rgba($danger-dark, .2);
+                //border-radius: 3px;
+            }
+            .body-card-content, .body-card-content p {
+               color: $spanish-gray-dark;
+            }
+            h1 {
+                color: $danger-dark;
+            }
+        }   
+    }
+}

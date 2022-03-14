@@ -1,0 +1,25 @@
+@import "../../assets/scss/core/variables";
+
+.empty-container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    .noting-state {
+        text-align: center;
+        margin: 1rem 3rem;
+        h3 {
+            font-size: $font-size-base * 1.25;
+        }
+        p {
+            font-size: $font-size-base;
+            color: $gray-900;
+        }
+        img {
+            max-width: 220px;
+            max-height: 220px;
+            margin-bottom: 3rem;
+        }
+    }
+}

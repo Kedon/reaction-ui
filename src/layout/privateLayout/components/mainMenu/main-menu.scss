@@ -1,0 +1,17 @@
+@import "../../../../assets/scss/core/variables";
+
+.main-menu-element {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($white, .7);
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    &.show {
+        visibility: visible;
+        opacity: 1;
+    }
+} 
