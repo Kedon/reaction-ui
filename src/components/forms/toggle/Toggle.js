@@ -1,12 +1,24 @@
-import React from 'react';
-import './style.scss'
+import React from 'react'
+import "./toggle.scss"
 
-const Toggle = ({ label, error, ...rest }) => {
-    return (
-        <div className="component-toggle">
+function Toggle({ label, value, onChange, name, id, className, color }) {
 
-        </div>
-    )
+function changeToggle(){
+    onChange({
+        target:{
+            name: name,
+            value: !value
+        }
+    })
 }
 
+return (
+      <div className={`rc-toggle-ui ${className ? className : ''}`} onClick={changeToggle}>
+          <div className={`rc-toggle-ui-button ${value ? 'on' : 'off'} ${color ? color : ''}`}>
+            <div className='rc-toggle-ui-bullet'></div>
+          </div>
+          <span>{label}</span>
+      </div>
+  )
+}
 export default Toggle

@@ -77,7 +77,6 @@ const Login = () => {
                         placeholder="E-mail"
                         value={username}
                         //errorMessage={username.trim().length === 0 && errors.find(f => f.field === 'login') ? errors.find(f => f.field === 'login').message : null}
-                        fieldDescription={null}
                         maxLength={10}
                         fieldDescription={'Informe o seu email'}
                         onChange={e => setUsername(e.target.value)} />
@@ -100,7 +99,7 @@ const Login = () => {
                     title="Recuperação de conta"
                     position="center"
                     toggle={toggleModal}
-                    size="xl"
+                    size="sm"
                     footer={<div className="d-flex justify-content-between">
                         <Button.Cancel onClick={toggleModal} />
                         <Button.Primary dark /*onClick={handleSubmit} loading={requesting}*/>

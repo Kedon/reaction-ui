@@ -1,0 +1,124 @@
+@import "../../../assets/scss/core/variables";
+.rc-toggle-ui{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    .rc-toggle-ui-button {
+        width: 38px;
+        height: 20px;
+        background-color: #f0efef;
+        border: solid 1px $border-color-light;
+        border-radius: 10px;
+        margin-right: 5px;
+        position: relative;
+        .rc-toggle-ui-bullet {
+            width: 14px;
+            height: 14px;
+            background: #5e5f6066;
+            border-radius: 7px;
+            //border: solid 1px #5e5f6066;
+            top: 2px;
+            left: 2px;
+            position: absolute;
+            transition: $transition-fast;
+        }
+        &.on {
+            background-color: $primary-pastel;
+            border-color: rgba($primary-light, .3);
+            .rc-toggle-ui-bullet {
+                background-color: $primary;
+                left: inherit;
+                right: 2px;
+            }
+
+            &.primary {
+                background-color: $primary-pastel;
+                border-color: rgba($primary-light, .3);
+                .rc-toggle-ui-bullet {
+                    background-color: $primary;
+                    left: inherit;
+                    right: 2px;
+                }
+            }
+            &.secondary {
+                background-color: $secondary-pastel;
+                border-color: rgba($secondary-light, .3);
+                .rc-toggle-ui-bullet {
+                    background-color: $secondary;
+                    left: inherit;
+                    right: 2px;
+                }
+            } 
+        
+            &.gray {
+                background-color: $gray-pastel;
+                border-color: rgba($gray-light, .3);
+                .rc-toggle-ui-bullet {
+                    background-color: $gray;
+                    left: inherit;
+                    right: 2px;
+                }
+            }
+            &.success {
+                background-color: $success-pastel;
+                border-color: rgba($success-light, .3);
+                .rc-toggle-ui-bullet {
+                    background-color: $success;
+                    left: inherit;
+                    right: 2px;
+                }
+            }
+            &.system {
+                background-color: $system-pastel;
+                border-color: rgba($system-light, .3);
+                .rc-toggle-ui-bullet {
+                    background-color: $system;
+                    left: inherit;
+                    right: 2px;
+                }
+            }
+            &.info {
+                background-color: $info-pastel;
+                border-color: rgba($info-light, .3);
+                .rc-toggle-ui-bullet {
+                    background-color: $info;
+                    left: inherit;
+                    right: 2px;
+                }
+            }
+            &.warning {
+                background-color: $warning-pastel;
+                border-color: rgba($warning-light, .3);
+                .rc-toggle-ui-bullet {
+                    background-color: $warning;
+                    left: inherit;
+                    right: 2px;
+                }
+            }
+            &.danger {
+                background-color: $danger-pastel;
+                border-color: rgba($danger-light, .3);
+                .rc-toggle-ui-bullet {
+                    background-color: $danger;
+                    left: inherit;
+                    right: 2px;
+                }
+            }
+            &.spanish-gray {
+                background-color: $spanish-gray-pastel;
+                border-color: rgba($spanish-gray-light, .3);
+                .rc-toggle-ui-bullet {
+                    background-color: $spanish-gray;
+                    left: inherit;
+                    right: 2px;
+                }
+            }
+            
+        }
+    }
+    span {
+        font-size: 13.5px;
+        color: $gray-light;
+        font-weight: 400;
+    }
+}

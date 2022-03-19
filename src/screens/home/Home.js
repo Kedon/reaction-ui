@@ -6,12 +6,15 @@ import SearchBar from '../../components/searchbar/Searchbar';
 import Button from '../../components/button/Button';
 import Input from '../../components/forms/input/Input';
 import Select from '../../components/forms/select/Select';
+import Toggle from '../../components/forms/toggle/Toggle';
+import Tag from '../../components/tag/Tag';
 import Modal from '../../components/modal/Modal';
 import { errorHandle, errorConciliation } from '../../utils/error-handle';
 import { useToast } from '../../components/toast';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchProducts } from '../../global/redux/actions/product';
-
+import productsJson from '../../assets/@fake-data/products.json';
+import classNames from 'classnames';
 
 const usuario = null
 const fakeOptions = [
@@ -32,8 +35,10 @@ const Home = () => {
             { name: "rowId", label: null, ordering: null, hidden: true },
             { name: "id", label: "id", ordering: 'id', hidden: false, textAlign: 'center' },
             { name: "img", label: "Imagem", ordering: null, hidden: true },
-            { name: "order_status", label: "Status", ordering: 'order_status', hidden: false, textAlign: 'center' },
+            { name: "order_status", label: "Status", ordering: 'order_status', hidden: true, textAlign: 'center' },
+            { name: "order_statusLabel", label: "Status", ordering: 'order_status', hidden: false, textAlign: 'center' },
             { name: "name", label: "Produto", ordering: 'name' },
+            { name: "situationLabel", label: "Situação", ordering: null, textAlign: 'center' },
             { name: "price", label: "Preço", ordering: 'Price', textAlign: 'center' },
             { name: "popularityLabel", label: "Popularidade", ordering: "popularityLabel", textAlign: 'center' },
         ],
@@ -69,20 +74,31 @@ const Home = () => {
         console.log(product)
     }, [product])
     useEffect(() => {
-        /*const products = productsJson
+        const products = productsJson
         setData({
             ...data,
             rows: products.map(m => {
                 let product = m
                 const image = <img style={{ width: 72 }} className="p-1" src={require("../../assets/images/elements/" + 'apple-watch.png')} />
                 product.rowId = product.id
+                product.order_statusLabel = <Tag color={
+                        classNames({
+                            'primary light': product.order_status === 'on hold',
+                            'secondary light': product.order_status === 'delivered',
+                            'danger light': product.order_status === 'canceled',
+                            'warning light': product.order_status === 'pending',
+                        })
+                    } 
+                
+                label={product.order_status} />
                 product.popularityLabel = <div className={product.popularity.color}>{product.popularity.popValue}</div>
+                product.situationLabel = <div className={product.active ? 'ui-color success' : 'ui-color danger'}>{product.active ? 'Ativo' : 'Inativo'}</div>
                 product.price = moneyMask(product.price)
                 product.img = image
                 return product
             }),
             totalRows: products.length
-        })*/
+        })
     }, [])
 
     useEffect(() => {
@@ -119,8 +135,8 @@ const Home = () => {
                 name: item.name,
                 price: item.price,
                 popularity: item.popularity.popValue,
-                order_status: fakeOptions.find( f => f.label === item.order_status)
-                //region: { value: item.codigoRegiao, label: item.descricaoRegiao + ` [${item.identificadorRegiao}]`, option: item.identificadorRegiao },
+                order_status: fakeOptions.find( f => f.label === item.order_status),
+                active: item.active
             }, setModal(true))
         } else if (action === 'delete') {
             toggleDeleteModal(item)
@@ -217,38 +233,7 @@ const Home = () => {
         if( errors ){
             setErrors(errors)
         } else {
-            const { codigo, identificator, name, type, password } = fields
-            setLoading(true)
-            usuario.alterar({
-                codigo: codigo,
-                codigoTipoUsuario: type && type.value,
-                identificador:  identificator,
-                nome: name,
-                senha: password && password.trim().length > 0  ? password : null,
-                codigoFiliais: [1]
-            }).then(res => {
-                setLoading(false)
-                setData({...data, rows: data.rows.map( m => {
-                    let item = m
-                    if(item.codigo === codigo){
-                        item = res.data
-                    }
-                    return item
-                })}, setModal(false))
-                setErrorFields(null)
-
-            }).catch( err => {
-                setLoading(false)
-                const error = errorHandle(err)
-                const fields = {
-                    Identificador: 'identificator',
-                    Nome: 'name',
-                }
-                const errorFlds = errorConciliation(fields, err)
-                setErrorFields( errorFlds )
-                toast.add({ message: error, color: 'warning', autoClose: 7000 })
-            })
-            
+                       
         }
     }
 
@@ -378,13 +363,13 @@ const Home = () => {
             />
             <Modal
                 show={modal}
-                title={ fields.codigo ? 'Editar produto' : 'Adicionar novo produto' }
+                title={ fields.rowId ? 'Editar produto' : 'Adicionar novo produto' }
                 position="center"
                 toggle={toggleModal}
                 onPressEnter={() => console.log('enterPressed')}
                 footer={<div className="d-flex justify-content-between">
                     <Button.Cancel dark onClick={toggleModal} />
-                    {fields.codigo ?
+                    {fields.rowId ?
                         <Button.Save dark onClick={hanleSaveItem} /> :
                         <Button.Add dark onClick={hanleAddItem} />
                     }
@@ -412,7 +397,6 @@ const Home = () => {
                     value={fields.name}
                     errorMessage={errors.find(f => f.field === 'name') ? errors.find(f => f.field === 'name').message : null}
                     warningMessage={errorFields && errorFields.name ? errorFields.name : null}
-                    fieldDescription={null}
                     onChange={e => handleInputChange(e)}
                     maxLength={200}
                     fieldDescription="Máximo 200 caracteres"
@@ -441,11 +425,19 @@ const Home = () => {
                     placeholder="Popularidade"
                     value={fields.popularity}
                     errorMessage={errors.find(f => f.field === 'popularity') ? errors.find(f => f.field === 'popularity').message : null}
-                    fieldDescription={null}
                     onChange={e => handleInputChange(e)}
                     minValue={0}
                     maxValue={100}
                     fieldDescription="Número, de 0 a 100"
+                />
+                <Toggle 
+                    className="mb-50"
+                    color="success"
+                    name="active"
+                    id="active"
+                    label="Ativo"
+                    value={fields.active}
+                    onChange={ e => handleInputChange(e) }
                 />
             </Modal>
             <Modal 

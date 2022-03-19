@@ -1,0 +1,84 @@
+@import "../../assets/scss/core/variables";
+
+.ui-tag {
+    background-color: $gray-pastel;
+    color: $gray-light;
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: $border-radius;
+    color: $white;
+    white-space: nowrap;
+    &.primary {
+        background-color: $primary;
+        &.light {
+            background-color: $primary-pastel;
+            border-color: rgba($primary-light, .3);
+            color: $primary;
+        }
+    }
+    &.secondary {
+        background-color: $secondary;
+        &.light {
+            background-color: $secondary-pastel;
+            border-color: rgba($secondary-light, .3);
+            color: $secondary;
+        }
+    } 
+
+    &.gray {
+        background-color: $gray;
+        &.light {
+            background-color: $gray-pastel;
+            border-color: rgba($gray-light, .3);
+            color: $gray;
+        }
+    }
+    &.success {
+        background-color: $success;
+        &.light {
+            background-color: $success-pastel;
+            border-color: rgba($success-light, .3);
+            color: $success;
+        }
+    }
+    &.system {
+        background-color: $system;
+        &.light {
+            background-color: $system-pastel;
+            border-color: rgba($system-light, .3);
+            color: $system;
+        }
+    }
+    &.info {
+        background-color: $info;
+        &.light {
+            background-color: $info-pastel;
+            border-color: rgba($info-light, .3);
+            color: $info;
+        }
+    }
+    &.warning {
+        background-color: $warning;
+        &.light {
+            background-color: $warning-pastel;
+            border-color: rgba($warning-light, .3);
+            color: $warning;
+        }
+    }
+    &.danger {
+        background-color: $danger;
+        &.light {
+            background-color: $danger-pastel;
+            border-color: rgba($danger-light, .3);
+            color: $danger;
+        }
+    }
+    &.spanish-gray {
+        background-color: $spanish-gray;
+        &.light {
+            background-color: $spanish-gray-pastel;
+            border-color: rgba($spanish-gray-light, .3);
+            color: $spanish-gray;
+        }
+    }
+}

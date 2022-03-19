@@ -4,6 +4,7 @@
         "order_status": "on hold",
         "name": "Apple Watch series 4 GPS",
         "category": "Computers",
+        "active": true,
         "price": "69.99",
         "popularity": { "popValue": "97", "color": "ui-color ui-color primary" },
         "img": "../../assets/images/elements/apple-watch.png"
@@ -15,6 +16,7 @@
         "order_status": "delivered",
         "name": "Beats HeadPhones",
         "category": "Computers",
+        "active": true,
         "price": "69.99"
     },
     {
@@ -24,7 +26,8 @@
         "img": "../../assets/images/elements/homepod.png",
         "order_status": "canceled",
         "name": "Altec Lansing - Bluetooth Speaker",
-        "category": "Audio"
+        "category": "Audio",
+        "active": true
     },
     {
         "id": 4,
@@ -32,12 +35,14 @@
         "order_status": "delivered",
         "name": "Altec Lansing - Bluetooth Speaker",
         "category": "Computers",
+        "active": true,
         "price": "199.99",
         "popularity": { "popValue": "65", "color": "ui-color primary" }
     },
     {
         "id": 5,
         "category": "Fitness",
+        "active": true,
         "price": "199.99",
         "popularity": { "popValue": "87", "color": "ui-color success" },
         "img": "../../assets/images/elements/homepod.png",
@@ -47,6 +52,7 @@
     {
         "id": 6,
         "category": "Computers",
+        "active": true,
         "price": "39.99",
         "popularity": { "popValue": "55", "color": "ui-color warning" },
         "img": "../../assets/images/elements/ipad-pro.png",
@@ -59,6 +65,7 @@
         "order_status": "on hold",
         "name": "Altec Lansing - Mini H2O Bluetooth Speaker",
         "category": "Computers",
+        "active": true,
         "price": "39.99",
         "popularity": { "popValue": "99", "color": "ui-color success" }
     },
@@ -68,6 +75,7 @@
         "order_status": "canceled",
         "name": "Altec Lansing - Bluetooth Speaker",
         "category": "Fitness",
+        "active": true,
         "price": "39.99",
         "popularity": { "popValue": "91", "color": "ui-color success" }
     },
@@ -76,6 +84,7 @@
         "order_status": "delivered",
         "name": "Altec Lansing - Mini H2O Bluetooth Speaker",
         "category": "Fitness",
+        "active": true,
         "price": "39.99",
         "popularity": { "popValue": "52", "color": "ui-color warning" },
         "img": "../../assets/images/elements/iphone-x.png"
@@ -83,6 +92,7 @@
     {
         "id": 10,
         "category": "Computers",
+        "active": true,
         "price": "39.99",
         "popularity": { "popValue": "64", "color": "ui-color primary" },
         "img": "../../assets/images/elements/apple-watch.png",
@@ -95,6 +105,7 @@
         "order_status": "canceled",
         "name": "Altec Lansing - Bluetooth Speaker",
         "category": "Fitness",
+        "active": true,
         "price": "99.99",
         "popularity": { "popValue": "93", "color": "ui-color success" }
     },
@@ -105,6 +116,7 @@
         "order_status": "pending",
         "name": "Altec Lansing - Bluetooth Speaker",
         "category": "Fitness",
+        "active": true,
         "price": "99.99"
     },
     {
@@ -113,6 +125,7 @@
         "order_status": "delivered",
         "name": "Altec Lansing - Bluetooth Speaker",
         "category": "Audio",
+        "active": true,
         "price": "99.99",
         "popularity": { "popValue": "88", "color": "ui-color success" }
     },
@@ -121,6 +134,7 @@
         "order_status": "delivered",
         "name": "Altec Lansing - Bluetooth Speaker",
         "category": "Computers",
+        "active": true,
         "price": "99.99",
         "popularity": { "popValue": "86", "color": "ui-color success" },
         "img": "../../assets/images/elements/ipad-pro.png"
@@ -130,6 +144,7 @@
         "order_status": "on hold",
         "name": "Aluratek - Bluetooth Audio Receiver",
         "category": "Computers",
+        "active": true,
         "price": "29.99",
         "popularity": { "popValue": "62", "color": "ui-color primary" },
         "img": "../../assets/images/elements/iphone-x.png"
@@ -140,6 +155,7 @@
         "order_status": "canceled",
         "name": "Aluratek - Bluetooth Audio Transmitter",
         "category": "Audio",
+        "active": true,
         "price": "29.99",
         "popularity": { "popValue": "51", "color": "ui-color warning" }
     },
@@ -149,6 +165,7 @@
         "order_status": "pending",
         "name": "Aluratek - iStream Bluetooth Audio Receiver",
         "category": "Fitness",
+        "active": true,
         "price": "29.99",
         "popularity": { "popValue": "51", "color": "ui-color warning" }
     },
@@ -157,6 +174,7 @@
         "order_status": "on hold",
         "name": "Antec - Nano Diamond Thermal Compound",
         "category": "Fitness",
+        "active": true,
         "price": "14.99",
         "popularity": { "popValue": "65", "color": "ui-color primary" },
         "img": "../../assets/images/elements/macbook-pro.png"
@@ -166,6 +184,7 @@
         "order_status": "on hold",
         "name": "Antec - SmartBean Bluetooth Adapter",
         "category": "Computers",
+        "active": true,
         "price": "39.99",
         "popularity": { "popValue": "63", "color": "ui-color primary" },
         "img": "../../assets/images/elements/iphone-x.png"
@@ -176,6 +195,7 @@
         "order_status": "on hold",
         "name": "Basis - Peak Fitness and Sleep Tracker",
         "category": "Fitness",
+        "active": true,
         "price": "199.99",
         "popularity": { "popValue": "72", "color": "ui-color success" }
     },
@@ -185,6 +205,7 @@
         "order_status": "canceled",
         "name": "Basis - Peak Fitness and Sleep Tracker",
         "category": "Fitness",
+        "active": true,
         "price": "199.99",
         "popularity": { "popValue": "77", "color": "ui-color success" }
     },
@@ -194,6 +215,7 @@
         "order_status": "delivered",
         "name": "Beats by Dr. Dre - 3' USB-to-Micro USB Cable",
         "category": "Computers",
+        "active": true,
         "price": "19.99",
         "popularity": { "popValue": "65", "color": "ui-color primary" }
     },
@@ -203,6 +225,7 @@
         "order_status": "delivered",
         "name": "Beats by Dr. Dre - Bike Mount for Pill Speakers",
         "category": "Audio",
+        "active": true,
         "price": "49.99",
         "popularity": { "popValue": "60", "color": "ui-color primary" }
     },
@@ -213,7 +236,8 @@
         "img": "../../assets/images/elements/homepod.png",
         "order_status": "on hold",
         "name": "Beats by Dr. Dre - Support Stand for Speakers",
-        "category": "Audio"
+        "category": "Audio",
+        "active": true
     },
     {
         "id": 25,
@@ -222,6 +246,7 @@
         "order_status": "on hold",
         "name": "Beats by Dr. Dre - Support Stand for Pill Speakers",
         "category": "Computers",
+        "active": true,
         "price": "49.99"
     },
     {
@@ -230,6 +255,7 @@
         "order_status": "delivered",
         "name": "Beats by Dr. Dre - Support Stand for Pill Speakers",
         "category": "Fitness",
+        "active": true,
         "price": "49.99",
         "popularity": { "popValue": "95", "color": "ui-color success" }
     },
@@ -239,12 +265,14 @@
         "order_status": "canceled",
         "name": "Beats by Dr. Dre - Support Stand for Speakers",
         "category": "Audio",
+        "active": true,
         "price": "49.99",
         "popularity": { "popValue": "98", "color": "ui-color success" }
     },
     {
         "id": 28,
         "category": "Fitness",
+        "active": true,
         "price": "49.99",
         "popularity": { "popValue": "75", "color": "ui-color success" },
         "img": "../../assets/images/elements/jbl-speaker.png",
@@ -257,12 +285,14 @@
         "order_status": "pending",
         "name": "Beats by Dr. Dre - Pill 2.0 Bluetooth Speaker",
         "category": "Audio",
+        "active": true,
         "price": "199.99",
         "popularity": { "popValue": "81", "color": "ui-color success" }
     },
     {
         "id": 30,
         "category": "Computers",
+        "active": true,
         "price": "199.99",
         "popularity": { "popValue": "91", "color": "ui-color success" },
         "img": "../../assets/images/elements/macbook-pro.png",
@@ -276,6 +306,7 @@
         "order_status": "canceled",
         "name": "Beats by Dr. Dre - Bluetooth Speaker",
         "category": "Fitness",
+        "active": true,
         "price": "199.99"
     },
     {
@@ -283,6 +314,7 @@
         "order_status": "on hold",
         "name": "Beats by Dr. Dre - Portable Speaker + Headphones",
         "category": "Fitness",
+        "active": true,
         "price": "699.99",
         "popularity": { "popValue": "95", "color": "ui-color success" },
         "img": "../../assets/images/elements/ipad-pro.png"
@@ -294,13 +326,15 @@
         "img": "../../assets/images/elements/jbl-speaker.png",
         "order_status": "on hold",
         "name": "Beats by Dr. Dre - Pill 2.0 Portable Stereo Speaker",
-        "category": "Fitness"
+        "category": "Fitness",
+        "active": true
     },
     {
         "id": 34,
         "order_status": "delivered",
         "name": "Bose® - SoundLink® III Cover",
         "category": "Fitness",
+        "active": true,
         "price": "34.99",
         "popularity": { "popValue": "81", "color": "ui-color success" },
         "img": "../../assets/images/elements/iphone-x.png"
@@ -311,6 +345,7 @@
         "order_status": "delivered",
         "name": "Bose® - Bose® SoundLink® III Cover",
         "category": "Computers",
+        "active": true,
         "price": "34.99",
         "popularity": { "popValue": "81", "color": "ui-color success" }
     },
@@ -320,12 +355,14 @@
         "order_status": "on hold",
         "name": "Bose® - SoundLink® III Cover",
         "category": "Audio",
+        "active": true,
         "price": "34.99",
         "popularity": { "popValue": "69", "color": "ui-color success" }
     },
     {
         "id": 37,
         "category": "Audio",
+        "active": true,
         "price": "24.99",
         "popularity": { "popValue": "95", "color": "ui-color success" },
         "img": "../../assets/images/elements/ipad-pro.png",
@@ -337,6 +374,7 @@
         "order_status": "on hold",
         "name": "Bose® - SoundLink® color Bluetooth Speaker",
         "category": "Audio",
+        "active": true,
         "price": "129.99",
         "popularity": { "popValue": "100", "color": "ui-color success" },
         "img": "../../assets/images/elements/apple-watch.png"
@@ -347,6 +385,7 @@
         "order_status": "pending",
         "name": "Bose® - SoundLink® color Bluetooth Speaker",
         "category": "Fitness",
+        "active": true,
         "price": "129.99",
         "popularity": { "popValue": "89", "color": "ui-color success" }
     },
@@ -355,6 +394,7 @@
         "order_status": "pending",
         "name": "Bose® - SoundLink® color Bluetooth Speaker",
         "category": "Computers",
+        "active": true,
         "price": "129.99",
         "popularity": { "popValue": "75", "color": "ui-color success" },
         "img": "../../assets/images/elements/magic-mouse.png"
@@ -365,6 +405,7 @@
         "order_status": "pending",
         "name": "Bose® - SoundLink® color Bluetooth Speaker",
         "category": "Fitness",
+        "active": true,
         "price": "129.99",
         "popularity": { "popValue": "54", "color": "ui-color warning" }
     },
@@ -375,6 +416,7 @@
         "order_status": "delivered",
         "name": "Bose® - SoundLink® color Bluetooth Speaker",
         "category": "Computers",
+        "active": true,
         "price": "129.99"
     },
     {
@@ -384,7 +426,8 @@
         "img": "../../assets/images/elements/ipad-pro.png",
         "order_status": "pending",
         "name": "Bose® - SoundLink® color Carry Case",
-        "category": "Computers"
+        "category": "Computers",
+        "active": true
     },
     {
         "id": 44,
@@ -393,6 +436,7 @@
         "order_status": "on hold",
         "name": "Bose® - SoundLink® III Cover",
         "category": "Fitness",
+        "active": true,
         "price": "34.99"
     },
     {
@@ -402,6 +446,7 @@
         "order_status": "canceled",
         "name": "Bose® - SoundLink® III Cover",
         "category": "Audio",
+        "active": true,
         "price": "34.99"
     },
     {
@@ -410,6 +455,7 @@
         "order_status": "pending",
         "name": "Bose® - SoundLink® III Cover",
         "category": "Fitness",
+        "active": true,
         "price": "34.99",
         "popularity": { "popValue": "70", "color": "ui-color success" }
     },
@@ -418,6 +464,7 @@
         "order_status": "pending",
         "name": "Bose® - Mini Bluetooth Speaker II",
         "category": "Computers",
+        "active": true,
         "price": "199.99",
         "popularity": { "popValue": "62", "color": "ui-color primary" },
         "img": "../../assets/images/elements/magic-mouse.png"
@@ -427,6 +474,7 @@
         "order_status": "canceled",
         "name": "Bose® - Bluetooth Speaker II",
         "category": "Audio",
+        "active": true,
         "price": "199.99",
         "popularity": { "popValue": "63", "color": "ui-color primary" },
         "img": "../../assets/images/elements/iphone-x.png"
@@ -434,6 +482,7 @@
     {
         "id": 50,
         "category": "Fitness",
+        "active": true,
         "price": "24.99",
         "popularity": { "popValue": "90", "color": "ui-color success" },
         "img": "../../assets/images/elements/iphone-x.png",
@@ -447,6 +496,7 @@
         "order_status": "canceled",
         "name": "Bose® - Bluetooth Speaker Soft Cover",
         "category": "Fitness",
+        "active": true,
         "price": "24.99"
     },
     {
@@ -454,6 +504,7 @@
         "order_status": "on hold",
         "name": "Bose® - Bluetooth Speaker Soft Cover",
         "category": "Computers",
+        "active": true,
         "price": "24.99",
         "popularity": { "popValue": "55", "color": "ui-color warning" },
         "img": "../../assets/images/elements/ipad-pro.png"
@@ -463,6 +514,7 @@
         "order_status": "pending",
         "name": "Bose® - Bluetooth Speaker",
         "category": "Audio",
+        "active": true,
         "price": "24.99",
         "popularity": { "popValue": "53", "color": "ui-color warning" },
         "img": "../../assets/images/elements/ipad-pro.png"
@@ -470,6 +522,7 @@
     {
         "id": 54,
         "category": "Fitness",
+        "active": true,
         "price": "24.99",
         "popularity": { "popValue": "82", "color": "ui-color success" },
         "img": "../../assets/images/elements/ipad-pro.png",
@@ -482,6 +535,7 @@
         "order_status": "on hold",
         "name": "Bose® - Bluetooth Speaker Travel Bag",
         "category": "Computers",
+        "active": true,
         "price": "44.99",
         "popularity": { "popValue": "78", "color": "ui-color success" }
     },
@@ -492,6 +546,7 @@
         "order_status": "canceled",
         "name": "Bose® - SoundLink® Mini Soft Cover",
         "category": "Computers",
+        "active": true,
         "price": "24.99"
     },
     {
@@ -501,7 +556,8 @@
         "img": "../../assets/images/elements/macbook-pro.png",
         "order_status": "pending",
         "name": "Bose® - SoundLink® Mini Soft Cover",
-        "category": "Computers"
+        "category": "Computers",
+        "active": true
     },
     {
         "id": 58,
@@ -510,7 +566,8 @@
         "img": "../../assets/images/elements/ipad-pro.png",
         "order_status": "pending",
         "name": "Bose® - Bluetooth Speaker III",
-        "category": "Fitness"
+        "category": "Fitness",
+        "active": true
     },
     {
         "id": 59,
@@ -519,6 +576,7 @@
         "order_status": "delivered",
         "name": "Bose® - SoundLink® Soft Cover",
         "category": "Computers",
+        "active": true,
         "price": "24.99"
     },
     {
@@ -528,13 +586,15 @@
         "img": "../../assets/images/elements/iphone-x.png",
         "order_status": "on hold",
         "name": "Bose® - Bluetooth Music Adapter",
-        "category": "Computers"
+        "category": "Computers",
+        "active": true
     },
     {
         "id": 61,
         "order_status": "canceled",
         "name": "Bowers & Wilkins - Bluetooth Speaker",
         "category": "Computers",
+        "active": true,
         "price": "349.98",
         "popularity": { "popValue": "79", "color": "ui-color success" },
         "img": "../../assets/images/elements/jbl-speaker.png"
@@ -545,12 +605,14 @@
         "order_status": "on hold",
         "name": "BRAVEN - Balance Portable Bluetooth Speaker",
         "category": "Fitness",
+        "active": true,
         "price": "129.99",
         "popularity": { "popValue": "82", "color": "ui-color success" }
     },
     {
         "id": 63,
         "category": "Computers",
+        "active": true,
         "price": "129.99",
         "popularity": { "popValue": "80", "color": "ui-color success" },
         "img": "../../assets/images/elements/apple-watch.png",
@@ -564,11 +626,13 @@
         "img": "../../assets/images/elements/homepod.png",
         "order_status": "pending",
         "name": "BRAVEN - Outdoor Speaker",
-        "category": "Computers"
+        "category": "Computers",
+        "active": true
     },
     {
         "id": 65,
         "category": "Fitness",
+        "active": true,
         "price": "199.99",
         "popularity": { "popValue": "61", "color": "ui-color primary" },
         "img": "../../assets/images/elements/jbl-speaker.png",
@@ -581,6 +645,7 @@
         "order_status": "on hold",
         "name": "BRAVEN - Portable Bluetooth Speaker",
         "category": "Fitness",
+        "active": true,
         "price": "299.99",
         "popularity": { "popValue": "85", "color": "ui-color success" }
     },
@@ -591,6 +656,7 @@
         "order_status": "on hold",
         "name": "BRAVEN - Portable Bluetooth Speaker",
         "category": "Fitness",
+        "active": true,
         "price": "99.99"
     },
     {
@@ -599,6 +665,7 @@
         "order_status": "on hold",
         "name": "BRAVEN - Wireless Bluetooth Speaker",
         "category": "Audio",
+        "active": true,
         "price": "99.99",
         "popularity": { "popValue": "50", "color": "ui-color warning" }
     },
@@ -608,6 +675,7 @@
         "order_status": "delivered",
         "name": "BRAVEN - Wireless Bluetooth Speaker",
         "category": "Fitness",
+        "active": true,
         "price": "99.99",
         "popularity": { "popValue": "93", "color": "ui-color success" }
     },
@@ -617,6 +685,7 @@
         "order_status": "pending",
         "name": "BRAVEN - Wireless Bluetooth Speaker",
         "category": "Fitness",
+        "active": true,
         "price": "99.99",
         "popularity": { "popValue": "51", "color": "ui-color warning" }
     },
@@ -626,6 +695,7 @@
         "order_status": "pending",
         "name": "Craig - Tower Speaker",
         "category": "Fitness",
+        "active": true,
         "price": "69.99",
         "popularity": { "popValue": "77", "color": "ui-color success" }
     },
@@ -635,6 +705,7 @@
         "order_status": "canceled",
         "name": "Craig - Portable Wireless Speaker",
         "category": "Computers",
+        "active": true,
         "price": "29.99",
         "popularity": { "popValue": "89", "color": "ui-color success" }
     },
@@ -644,6 +715,7 @@
         "order_status": "pending",
         "name": "Definitive Technology - Wireless Speaker",
         "category": "Computers",
+        "active": true,
         "price": "399.98",
         "popularity": { "popValue": "81", "color": "ui-color success" }
     },
@@ -654,11 +726,13 @@
         "img": "../../assets/images/elements/jbl-speaker.png",
         "order_status": "pending",
         "name": "Definitive Technology - Wireless Speaker",
-        "category": "Fitness"
+        "category": "Fitness",
+        "active": true
     },
     {
         "id": 75,
         "category": "Fitness",
+        "active": true,
         "price": "399.98",
         "popularity": { "popValue": "88", "color": "ui-color success" },
         "img": "../../assets/images/elements/magic-mouse.png",
@@ -672,6 +746,7 @@
         "order_status": "canceled",
         "name": "Denon - HEOS 7 Wireless Speaker",
         "category": "Audio",
+        "active": true,
         "price": "599.98"
     },
     {
@@ -679,6 +754,7 @@
         "order_status": "canceled",
         "name": "ECOXGEAR - Waterproof Bluetooth Speaker",
         "category": "Computers",
+        "active": true,
         "price": "129.99",
         "popularity": { "popValue": "52", "color": "ui-color warning" },
         "img": "../../assets/images/elements/iphone-x.png"
@@ -689,6 +765,7 @@
         "order_status": "pending",
         "name": "Fitbit - Charge HR Activity Tracker + Heart Rate (Large)",
         "category": "Audio",
+        "active": true,
         "price": "149.99",
         "popularity": { "popValue": "66", "color": "ui-color primary" }
     },
@@ -699,7 +776,8 @@
         "img": "../../assets/images/elements/apple-watch.png",
         "order_status": "delivered",
         "name": "Fitbit - Charge HR Activity Tracker + Heart Rate (Large)",
-        "category": "Audio"
+        "category": "Audio",
+        "active": true
     },
     {
         "id": 80,
@@ -707,6 +785,7 @@
         "order_status": "canceled",
         "name": "Fitbit - Activity Tracker + Heart Rate (Large)",
         "category": "Computers",
+        "active": true,
         "price": "149.99",
         "popularity": { "popValue": "96", "color": "ui-color success" }
     },
@@ -716,12 +795,14 @@
         "order_status": "on hold",
         "name": "Fitbit - Charge HR Activity Tracker + Heart Rate (Small)",
         "category": "Fitness",
+        "active": true,
         "price": "149.99",
         "popularity": { "popValue": "92", "color": "ui-color success" }
     },
     {
         "id": 82,
         "category": "Computers",
+        "active": true,
         "price": "149.99",
         "popularity": { "popValue": "82", "color": "ui-color success" },
         "img": "../../assets/images/elements/ipad-pro.png",
@@ -734,6 +815,7 @@
         "order_status": "pending",
         "name": "Fitbit - Activity Tracker + Heart Rate (Small)",
         "category": "Computers",
+        "active": true,
         "price": "149.99",
         "popularity": { "popValue": "100", "color": "ui-color success" }
     },
@@ -743,6 +825,7 @@
         "order_status": "pending",
         "name": "Fitbit - Activity Tracker + Sleep Wristband",
         "category": "Fitness",
+        "active": true,
         "price": "149.99",
         "popularity": { "popValue": "100", "color": "ui-color success" }
     },
@@ -753,6 +836,7 @@
         "order_status": "pending",
         "name": "Fitbit - Activity Tracker (Large)",
         "category": "Fitness",
+        "active": true,
         "price": "129.99"
     },
     {
@@ -762,11 +846,13 @@
         "order_status": "on hold",
         "name": "Fitbit - Charge Wireless Activity Tracker (Large)",
         "category": "Computers",
+        "active": true,
         "price": "129.99"
     },
     {
         "id": 87,
         "category": "Computers",
+        "active": true,
         "price": "129.99",
         "popularity": { "popValue": "80", "color": "ui-color success" },
         "img": "../../assets/images/elements/jbl-speaker.png",
@@ -780,11 +866,13 @@
         "img": "../../assets/images/elements/iphone-x.png",
         "order_status": "on hold",
         "name": "Fitbit - Charge Wireless Activity Tracker (Small)",
-        "category": "Fitness"
+        "category": "Fitness",
+        "active": true
     },
     {
         "id": 89,
         "category": "Computers",
+        "active": true,
         "price": "129.99",
         "popularity": { "popValue": "75", "color": "ui-color success" },
         "img": "../../assets/images/elements/macbook-pro.png",
@@ -796,6 +884,7 @@
         "order_status": "pending",
         "name": "Fitbit - Charge Wireless Activity Tracker (Small)",
         "category": "Fitness",
+        "active": true,
         "price": "129.99",
         "popularity": { "popValue": "80", "color": "ui-color success" },
         "img": "../../assets/images/elements/macbook-pro.png"
@@ -805,6 +894,7 @@
         "order_status": "delivered",
         "name": "Fitbit - Charging Cable for Activity Trackers",
         "category": "Fitness",
+        "active": true,
         "price": "19.99",
         "popularity": { "popValue": "50", "color": "ui-color warning" },
         "img": "../../assets/images/elements/macbook-pro.png"
@@ -815,6 +905,7 @@
         "order_status": "delivered",
         "name": "Fitbit - Clip for Activity and Sleep Trackers",
         "category": "Fitness",
+        "active": true,
         "price": "14.99",
         "popularity": { "popValue": "57", "color": "ui-color warning" }
     },
@@ -832,6 +923,7 @@
         "order_status": "canceled",
         "name": "Fitbit - Clip for Zip Wireless Activity Trackers",
         "category": "Audio",
+        "active": true,
         "price": "14.99",
         "popularity": { "popValue": "78", "color": "ui-color success" },
         "img": "../../assets/images/elements/jbl-speaker.png"
@@ -843,6 +935,7 @@
         "order_status": "on hold",
         "name": "Fitbit - Flex 1 USB Charging Cable",
         "category": "Fitness",
+        "active": true,
         "price": "14.99"
     },
     {
@@ -850,6 +943,7 @@
         "order_status": "canceled",
         "name": "Fitbit - Flex 1 USB Charging Cable",
         "category": "Audio",
+        "active": true,
         "price": "14.99",
         "popularity": { "popValue": "51", "color": "ui-color warning" },
         "img": "../../assets/images/elements/jbl-speaker.png"
@@ -857,6 +951,7 @@
     {
         "id": 97,
         "category": "Computers",
+        "active": true,
         "price": "4.99",
         "popularity": { "popValue": "56", "color": "ui-color warning" },
         "img": "../../assets/images/elements/jbl-speaker.png",
@@ -869,6 +964,7 @@
         "order_status": "on hold",
         "name": "Fitbit - Flex Wireless Activity + Sleep Tracker Wristband",
         "category": "Computers",
+        "active": true,
         "price": "99.99",
         "popularity": { "popValue": "95", "color": "ui-color success" }
     },
@@ -877,6 +973,7 @@
         "order_status": "delivered",
         "name": "Fitbit - Flex Wireless Activity + Sleep Tracker Wristband",
         "category": "Audio",
+        "active": true,
         "price": "99.99",
         "popularity": { "popValue": "85", "color": "ui-color success" },
         "img": "../../assets/images/elements/ipad-pro.png"
@@ -884,6 +981,7 @@
     {
         "id": 100,
         "category": "Computers",
+        "active": true,
         "price": "99.99",
         "popularity": { "popValue": "50", "color": "ui-color warning" },
         "img": "../../assets/images/elements/ipad-pro.png",
