@@ -34,7 +34,7 @@ const Home = () => {
         columns: [
             { name: "rowId", label: null, ordering: null, hidden: true },
             { name: "id", label: "id", ordering: 'id', hidden: false, textAlign: 'center' },
-            { name: "img", label: "Imagem", ordering: null, hidden: true },
+            { name: "img", label: "Imagem", ordering: null, textAlign: 'center' },
             { name: "order_status", label: "Status", ordering: 'order_status', hidden: true, textAlign: 'center' },
             { name: "order_statusLabel", label: "Status", ordering: 'order_status', hidden: false, textAlign: 'center' },
             { name: "name", label: "Produto", ordering: 'name' },
@@ -79,7 +79,7 @@ const Home = () => {
             ...data,
             rows: products.map(m => {
                 let product = m
-                const image = <img style={{ width: 72 }} className="p-1" src={require("../../assets/images/elements/" + 'apple-watch.png')} />
+                const image = <img style={{ width: 45, margin: 7 }} className="p-1" src={require("../../assets/images/elements/" + 'apple-watch.png')} />
                 product.rowId = product.id
                 product.order_statusLabel = <Tag color={
                         classNames({
@@ -89,7 +89,6 @@ const Home = () => {
                             'warning light': product.order_status === 'pending',
                         })
                     } 
-                
                 label={product.order_status} />
                 product.popularityLabel = <div className={product.popularity.color}>{product.popularity.popValue}</div>
                 product.situationLabel = <div className={product.active ? 'ui-color success' : 'ui-color danger'}>{product.active ? 'Ativo' : 'Inativo'}</div>

@@ -5,30 +5,30 @@
     cursor: pointer;
     .rc-toggle-ui-button {
         width: 38px;
-        height: 20px;
+        height: 19px;
         background-color: #f0efef;
         border: solid 1px $border-color-light;
         border-radius: 10px;
         margin-right: 5px;
-        position: relative;
+        display: flex;
+        align-items: center;
         .rc-toggle-ui-bullet {
             width: 14px;
             height: 14px;
             background: #5e5f6066;
             border-radius: 7px;
             //border: solid 1px #5e5f6066;
-            top: 2px;
-            left: 2px;
-            position: absolute;
+            margin: 0 3px;
             transition: $transition-fast;
         }
         &.on {
             background-color: $primary-pastel;
             border-color: rgba($primary-light, .3);
+            justify-content: flex-end;
             .rc-toggle-ui-bullet {
                 background-color: $primary;
                 left: inherit;
-                right: 2px;
+                right: 3px;
             }
 
             &.primary {
@@ -36,8 +36,6 @@
                 border-color: rgba($primary-light, .3);
                 .rc-toggle-ui-bullet {
                     background-color: $primary;
-                    left: inherit;
-                    right: 2px;
                 }
             }
             &.secondary {
@@ -45,8 +43,6 @@
                 border-color: rgba($secondary-light, .3);
                 .rc-toggle-ui-bullet {
                     background-color: $secondary;
-                    left: inherit;
-                    right: 2px;
                 }
             } 
         
@@ -55,8 +51,6 @@
                 border-color: rgba($gray-light, .3);
                 .rc-toggle-ui-bullet {
                     background-color: $gray;
-                    left: inherit;
-                    right: 2px;
                 }
             }
             &.success {
@@ -64,8 +58,6 @@
                 border-color: rgba($success-light, .3);
                 .rc-toggle-ui-bullet {
                     background-color: $success;
-                    left: inherit;
-                    right: 2px;
                 }
             }
             &.system {
@@ -73,8 +65,6 @@
                 border-color: rgba($system-light, .3);
                 .rc-toggle-ui-bullet {
                     background-color: $system;
-                    left: inherit;
-                    right: 2px;
                 }
             }
             &.info {
@@ -82,8 +72,6 @@
                 border-color: rgba($info-light, .3);
                 .rc-toggle-ui-bullet {
                     background-color: $info;
-                    left: inherit;
-                    right: 2px;
                 }
             }
             &.warning {
@@ -91,8 +79,6 @@
                 border-color: rgba($warning-light, .3);
                 .rc-toggle-ui-bullet {
                     background-color: $warning;
-                    left: inherit;
-                    right: 2px;
                 }
             }
             &.danger {
@@ -100,8 +86,6 @@
                 border-color: rgba($danger-light, .3);
                 .rc-toggle-ui-bullet {
                     background-color: $danger;
-                    left: inherit;
-                    right: 2px;
                 }
             }
             &.spanish-gray {
@@ -109,8 +93,6 @@
                 border-color: rgba($spanish-gray-light, .3);
                 .rc-toggle-ui-bullet {
                     background-color: $spanish-gray;
-                    left: inherit;
-                    right: 2px;
                 }
             }
             
